@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+</head>
+<body>
+<nav class='navbar navbar-default'>
+    <div class='container'>
+        <div class="navbar-header">
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class='col-xs-12 col-sm-6 col-sm-offset-3'>
+        <div class='page-header'>
+            <h1>Zarejestruj się</h1>
+        </div>
+
+        <div class='panel'>
+            <div class='panel-body'>
+                <form method="post" id='my-form' >
+                    <div class='form-group'>
+                        <label for="name">Nazwa:</label>
+                        <input type="text" class='form-control' id='name' name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" class='form-control' id='email' name="email" required>
+                        <label for="phone">Telefon:</label>
+                        <input type="tel" class='form-control' id='phone' name="phone" required>
+                        <label for="number">Numer</label>
+                        <input type="number" class="form-control" id="number" required>
+                        <label for="file">Upload pliku graficznego jpg/png</label>
+                        <input type="file" class="form-control-file" id="file" aria-describedby="fileHelp" accept="image/*" required>
+                        <div id='image-preview'></div>
+                        <p id='image-error'></p>
+                        <div class="checkbox">
+                            <label><input type="checkbox" id='agree1' required> Zapoznałem się z regulaminem...</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" id='agree2' required> Wyrażam zgodę na...</label>
+                        </div>
+
+                        <p>
+                            <button type="submit" class="btn btn-primary" id='submit-button'>Zatwierdź</button>
+                        </p>
+                    </div>
+                    <div class="info-container">
+                        <div class="error-message">
+                        </div>
+                        <div class="success-message">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.1/jquery.fancybox.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
